@@ -1,0 +1,6 @@
+@import './normalize.css';
+@import './variables.css';
+
+@import 'header.css';
+@import 'hero.css';
+@import 'section.css';

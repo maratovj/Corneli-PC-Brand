@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Prop+Single:wght@100..900&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Monoton&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Sora:wght@100..800&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Prop+Single:wght@100..900&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Monoton&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bitcount+Prop+Single:wght@100..900&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Monoton&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sekuya&family=Sora:wght@100..800&family=Unbounded:wght@200..900&family=Varela+Round&display=swap');
+
+:root {
+  /* Colors */
+  --color-background: #F2EFE5;
+  --color-background-dark: #FAF9EE;
+  --color-light: #FFFFFF;
+  --color-dark: #000000;
+  --color-accent: #FF6500;
+
+  /* Typography */
+  --ff-base: 'Montserrat Alternates', sans-serif;
+  --ff-secondary: 'Varela Round', sans-serif;
+  --ff-accent: 'Monoton', cursive;
+
+  --text-size: clamp(2.75rem, 6vw, 4.5rem);
+  --text-weight: 600;
+
+  --text-size-lg: 2.25rem;
+  --text-weight-lg: 500;
+
+  --text-size-md: 1.5rem;
+  --text-weight-md: 400;
+
+  --text-size-sm: 1.125rem;
+  --text-weight-sm: 400;
+
+  /* ---------- Spacing ---------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* ---------- Radius ---------- */
+  --radius-none: 0px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* ---------- Border ---------- */
+  --border: 1px solid var(--color-text);
+
+  /* ---------- Motion ---------- */
+  --motion-fast: 120ms;
+  --motion-base: 150ms;
+  --motion-slow: 240ms;
+  --easing-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
+
+  /* ---------- Layout ---------- */
+  --container-max: 1920px;
+  --container-pad: clamp(20px, 4vw, 48px);
+}
+
+body {
+  font-family: var(--ff-base);
+  font-size: var(--text-size-sm);
+  font-weight: var(--text-weight-md);
+  line-height: 1.5;
+  color: var(--color-dark);
+  background-color: var(--color-background);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+button {
+  border-radius: var(--space-8);
+}

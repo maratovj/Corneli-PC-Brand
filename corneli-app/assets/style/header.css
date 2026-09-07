@@ -1,0 +1,36 @@
+.header {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-pad);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: var(--text-size-lg);
+    font-family: var(--ff-accent);
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    list-style: none;
+}
+
+.header__action-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header__action-button {
+    background-color: transparent;
+    border: none;
+}
