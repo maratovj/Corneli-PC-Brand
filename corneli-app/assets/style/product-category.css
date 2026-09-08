@@ -1,0 +1,54 @@
+.product-category {
+    color: var(--color-dark);
+}
+
+.product-category--desktop,
+.product-category--accessories {
+    background-color: #000;
+    color: var(--color-light);
+}
+
+.product-category--desktop button,
+.product-category--accessories button {
+    color: var(--color-dark);
+}
+
+.product-category--desktop {
+    border: 0 0 var(--radius-md) var(--radius-md);
+}
+
+.product-category__container {
+    margin-inline: auto;
+    max-width: var(--container-max);
+    padding-inline: var(--container-pad);
+}
+
+.product-category__container,
+.product-category__content {
+    padding-block: var(--container-pad);
+}
+
+.product-category__content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.product-category__title {
+    font-size: var(--text-size);
+    font-weight: var(--text-weight-md);
+}
+
+.product-category__info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-category__subtitle {
+    max-width: 500px;
+}
+
+.product-category__image-container img {
+    border-radius: var(--radius-md);
+}

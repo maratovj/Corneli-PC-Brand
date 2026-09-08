@@ -1,8 +1,8 @@
-.footer {
-    max-width: var(--container-max);
-    padding-inline: var(--container-pad);
+.footer__container {
     padding-block: var(--container-pad);
     margin-inline: auto;
+    max-width: var(--container-max);
+    padding-inline: var(--container-pad);
 }
 
 .footer__body {
