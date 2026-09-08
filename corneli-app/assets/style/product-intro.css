@@ -17,6 +17,7 @@
 
 .product-intro__content {
     justify-self: flex-start;
+    background-color: #DDDDDD;
 }
 
 .product-intro__cta-container {
