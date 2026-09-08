@@ -1,0 +1,29 @@
+button {
+  border-radius: var(--space-8);
+}
+
+.cta-button {
+    padding: 10px 30px;
+    background: #EAEFEF;
+    color: var(--color-text);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.1),
+    inset 0 8px 12px rgba(255, 255, 255, 0.7),
+    inset 0 0 5px rgba(117, 117, 117, 0.3),
+    inset 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.btn--accent {
+    background: radial-gradient(circle at bottom,
+            #F69D39 10%, #EF6905 60%
+        );
+    color: var(--color-light);
+    box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.1),
+    inset 0 8px 12px rgba(255, 255, 255, 0.7),
+    inset 0 0 5px rgba(117, 117, 117, 0.3),
+    inset 0 0 8px rgba(255, 255, 255, 0.5);
+}

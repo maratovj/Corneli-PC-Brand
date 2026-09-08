@@ -75,7 +75,3 @@ a {
   color: var(--color-text);
   text-decoration: none;
 }
-
-button {
-  border-radius: var(--space-8);
-}
