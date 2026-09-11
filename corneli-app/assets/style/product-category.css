@@ -17,12 +17,6 @@
     border: 0 0 var(--radius-md) var(--radius-md);
 }
 
-.product-category__container {
-    margin-inline: auto;
-    max-width: var(--container-max);
-    padding-inline: var(--container-pad);
-}
-
 .product-category__container,
 .product-category__content {
     padding-block: var(--container-pad);
@@ -41,7 +35,7 @@
 .product-category__info-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     gap: 20px;
 }
 

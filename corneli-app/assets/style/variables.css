@@ -7,6 +7,8 @@
   --color-background-dark: #FAF9EE;
   --color-light: #FFFFFF;
   --color-dark: #000000;
+  --color-lightgray: #c4c4c4;
+  --color-muted: #888;
   --color-accent: #FF6500;
 
   /* Typography */
@@ -82,4 +84,27 @@ h1 {
 
 p {
   font-family: var(--ff-base);
+}
+
+img {
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+::selection {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-background-dark);
+  border-radius: var(--radius-md);
 }

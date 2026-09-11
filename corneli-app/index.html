@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="assets/style/main.css">
-
+<script src="js/burger-menu.js" defer></script>
 <body>
     <!-- HEADER -->
 
@@ -33,22 +33,37 @@
                 </ul>
             </div>
             <div class="header__action-container">
-                <button class="header__action-button">
+                <button 
+                    class="header__action-button"
+                    title="Log in"
+                    aria-label="Log in"
+                    type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 16 16">
-                        <title>account</title>
                         <path fill="currentColor"
                             d="M6 5a2 2 0 1 1 4 0a2 2 0 0 1-4 0m-.5 3h5A1.5 1.5 0 0 1 12 9.5c0 1.116-.459 2.01-1.212 2.615C10.047 12.71 9.053 13 8 13s-2.047-.29-2.788-.885C4.46 11.51 4 10.616 4 9.5A1.5 1.5 0 0 1 5.5 8M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8" />
                     </svg>
                 </button>
-                <button class="header__action-button">
+                <button 
+                    class="header__action-button"
+                    title="Cart"
+                    aria-label="Cart"
+                    type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
-                        <title>cart</title>
                         <path fill="currentColor"
                             d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1m-9-1a2 2 0 0 1 4 0v1h-4Zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2Z" />
                     </svg>
                 </button>
-                <button class="header__action-button">EN</button>
+                <button 
+                    class="header__action-button"
+                    aria-label="Languages"
+                    type="button">EN</button>
             </div>
+
+            <button class="header__burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
@@ -56,7 +71,7 @@
     <main class="main">
         <section class="hero-section">
             <div class="hero-section__content">
-                <h1 class="hero-section__title">
+                <h1 class="hero-section__title section--title">
                     Designed to Inspire.<br>
                     <span class="title-accent">
                         Built for Comfort.
@@ -85,10 +100,10 @@
         </section>
 
         <section class="product-category product-category--desktop">
-            <div class="product-category__container">
+            <div class="product-category__container section--container">
                 <div class="product-category__content">
                     <div class="product-category__title-container">
-                        <h1 class="product-category__title">
+                        <h1 class="product-category__title section--title">
                             Designed for <br> Your Desk.
                         </h1>
                     </div>
@@ -118,10 +133,10 @@
 
 
         <section class="product-category product-category--laptop">
-            <div class="product-category__container">
+            <div class="product-category__container section--container">
                 <div class="product-category__content">
                     <div class="product-category__title-container">
-                        <h1 class="product-category__title">
+                        <h1 class="product-category__title section--title">
                             Built to <br> Move with You.
                         </h1>
                     </div>
@@ -150,10 +165,10 @@
         </section>
 
         <section class="product-category product-category--accessories">
-            <div class="product-category__container">
+            <div class="product-category__container section--container">
                 <div class="product-category__content">
                     <div class="product-category__title-container">
-                        <h1 class="product-category__title">
+                        <h1 class="product-category__title section--title">
                             The Perfect Match <br> for Your Setup.
                         </h1>
                     </div>
@@ -181,6 +196,94 @@
             </div>
         </section>
 
+        <section class="explore-section">
+            <div class="explore-section__container section--container">
+                <span class="explore-section__badge">• DEFINING YOUR WORKSPACE</span>
+                <h1 class="explore-section__title section--title">
+                    Pure Performance. <br> Built for Every Workspace.
+                </h1>
+
+                <div class="explore-section__image-container image-container--desktop">
+                    <div class="explore-section__image-stack">
+                        <img src="public/images/desktop-showcase-2.jpg" alt="Laptop in the home">
+                        <img src="public/images/desktop-showcase-3.jpg"
+                            alt="Laptop in the process of a creating content">
+                    </div>
+                    <div class="explore-section__image-main image">
+                        <img src="public/images/desktop-showcase-1.jpg" alt="Laptop in the office">
+                    </div>
+                </div>
+
+                <div class="explore-section__overview">
+                    <div class="explore-section__overview-block">
+                        <h2 class="explore-section__ob-title">01 / ARCHITECTURE</h2>
+                        <span class="explore-section__ob-badge"><span class="dot">•</span> Sculptural Presence</span>
+                        <p class="explore-section__ob-subtitle">
+                            A solid aluminum monolith crafted to anchors the workspace with quiet, timeless elegance.
+                        </p>
+                    </div>
+                    <div class="explore-section__overview-block">
+                        <h2 class="explore-section__ob-title">02 / POWER</h2>
+                        <span class="explore-section__ob-badge"><span class="dot">•</span> Uncompromised Output</span>
+                        <p class="explore-section__ob-subtitle">
+                            Thermal precision and silent cooling designed for complex 3D rendering, coding, and
+                            high-frame-rate gaming.
+                        </p>
+                    </div>
+                    <div class="explore-section__overview-block">
+                        <h2 class="explore-section__ob-title">03 / EXPANSION</h2>
+                        <span class="explore-section__ob-badge"><span class="dot">•</span>Modular Freedom</span>
+                        <p class="explore-section__ob-subtitle">
+                            Clean cable management and high-speed port architecture tailored for multi-monitor,
+                            pro-studio setups.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-section">
+            <div class="explore-section__container section--container">
+                <span class="explore-section__badge">• ADAPTS TO YOUR LIFE</span>
+                <h1 class="explore-section__title section--title">
+                    One Device. <br> Every Environment.
+                </h1>
+
+                <div class="explore-section__image-container">
+                    <div class="explore-section__image-main">
+                        <img src="public/images/office.jpg" alt="Laptop in the office">
+                    </div>
+                    <div class="explore-section__image-stack">
+                        <img src="public/images/home-laptop.jpg" alt="Laptop in the home">
+                        <img src="public/images/content.jpg" alt="Laptop in the process of a creating content">
+                    </div>
+                </div>
+
+                <div class="explore-section__overview">
+                    <div class="explore-section__overview-block">
+                        <h2 class="explore-section__ob-title">01 / HARMONY</h2>
+                        <span class="explore-section__ob-badge"><span class="dot">•</span> Unified Aesthetics</span>
+                        <p class="explore-section__ob-subtitle">
+                            A unified anodized aluminum design that brings order to the desktop.
+                        </p>
+                    </div>
+                    <div class="explore-section__overview-block">
+                        <h2 class="explore-section__ob-title">02 / PERFORMANCE</h2>
+                        <span class="explore-section__ob-badge"><span class="dot">•</span> Seamless Connection</span>
+                        <p class="explore-section__ob-subtitle">
+                            Instant wireless synchronization of all devices into a unified work ecosystem.
+                        </p>
+                    </div>
+                    <div class="explore-section__overview-block">
+                        <h2 class="explore-section__ob-title">03 / COMFORT</h2>
+                        <span class="explore-section__ob-badge"><span class="dot">•</span> Ergonomic Focus</span>
+                        <p class="explore-section__ob-subtitle">
+                            Height adjustment, silent keys, and eye protection for fatigue-free 24/7 operation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->

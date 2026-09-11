@@ -11,6 +11,10 @@
     padding-block: 20px;
 }
 
+.header__logo-container {
+    z-index: 1000;
+}
+
 .header__logo {
     font-size: var(--text-size-lg);
     font-family: var(--ff-accent);
@@ -19,9 +23,18 @@
 .header__list {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
 
     list-style: none;
+}
+
+.header__link {
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    transition: var(--motion-base);
+}
+
+.header__link:hover {
+    background-color: var(--color-background-dark);
 }
 
 .header__action-container {

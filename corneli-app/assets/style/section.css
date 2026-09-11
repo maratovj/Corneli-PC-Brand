@@ -1,0 +1,5 @@
+.section--container {
+    max-width: var(--container-max);
+    padding-inline: var(--container-pad);
+    margin-inline: auto;
+}

@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.hero-section__title {
+.section--title {
     margin-top: var(--space-16);
     font-size: var(--text-size);
     font-family: var(--ff-secondary);

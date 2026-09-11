@@ -1,10 +1,13 @@
 @import './normalize.css';
 @import './variables.css';
 
+@import 'components/button.css';
+@import 'components/burger-menu.css';
+
 @import 'header.css';
+@import 'mobile-menu.css';
+@import 'section.css';
 @import 'hero.css';
 @import 'product-category.css';
+@import 'explore.css';
 @import 'footer.css';
-
-
-@import 'components/button.css';
