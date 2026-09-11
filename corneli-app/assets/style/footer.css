@@ -12,17 +12,15 @@
 
 .footer__body {
     display: grid;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 40px;
-    border-bottom: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-darkgray);
 }
 
 .footer__body,
 .footer__soc1als-container,
 .footer__legal {
-    padding-block: 30px;
+    padding-block: clamp(15px, calc(14.987px + 1.251vw), 30px);
 }
 
 .footer__link-container {
@@ -53,9 +51,10 @@
 
 .footer__soc1als-container {
     display: flex;
+    row-gap: 20px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-darkgray);
 }
 
 .footer__newsletter {
@@ -66,39 +65,49 @@
 
 .footer__newsletter form {
     display: flex;
-    gap: 20px;
+    gap: clamp(10px, calc(9.992px + 0.834vw), 20px);
+}
+
+.footer__newsletter form button {
+    color: var(--color-dark);
 }
 
 .footer__newsletter input {
     background-color: transparent;
     color: var(--color-lightgray);
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--color-darkgray);
     border-radius: var(--radius-md);
-    padding-inline: 20px;
 }
 
-.footer__newsletter button {
-    color: var(--color-dark);
+.footer__newsletter input,
+.footer__newsletter form button {
+    padding-inline: clamp(15px, calc(14.987px + 1.251vw), 30px);
+    padding-block: clamp(3px, calc(14.987px + 1.251vw), 10px);
 }
 
 .footer__soc1als {
     display: flex;
-    gap: 25px;
+    gap: clamp(10px, calc(3.571px + 1.786vw), 15px);
 }
 
-.footer__soc1als span {
+.footer__soc1als a {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 10px;
-    border: 1px solid var(--color-light);
+    padding: clamp(5px, calc(2.857px + 0.595vw), 10px);
+    border: 1px solid var(--color-darkgray);
     border-radius: var(--radius-md);
+    opacity: 0.8;
 }
 
-.footer__soc1als span:hover {
-    background-color: #222;
+.footer__soc1als a:hover {
+    background-color: var(--color-darkgray);
     transition: var(--motion-base);
+}
+
+.footer__soc1als a svg {
+    max-width: clamp(18px, calc(0px + 100vw), 24px);
 }
 
 .footer__legal {
@@ -123,4 +132,24 @@
 
 .footer__legal-item:last-child {
     border-right: none;
+}
+
+.footer__soc1als-container,
+.footer__newsletter form,
+.footer__soc1als,
+.footer__legal-list {
+    flex-wrap: wrap;
+}
+
+@media (width < 1100px) {
+    .footer__legal-list .footer__legal-item {
+        padding-left: 0;
+    }
+}
+
+@media (width < 800px) {
+    .footer__soc1als-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

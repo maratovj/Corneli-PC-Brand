@@ -7,8 +7,7 @@ button {
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-    padding: 10px 30px;
+    padding: clamp(7px, calc(4px + 0.313vw), 12px) clamp(15px, calc(12px + 0.938vw), 30px);
     background: #EAEFEF;
     color: var(--color-text);
     outline: none;
