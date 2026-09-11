@@ -1,3 +1,7 @@
+.hero-section {
+    position: relative;
+}
+
 .hero-section__content {
     max-width: var(--continer-max);
     margin-inline: auto;
@@ -56,4 +60,21 @@
     font-weight: 900;
     opacity: 0.9;
     z-index: -1;
+}
+
+.to-top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-md);
 }

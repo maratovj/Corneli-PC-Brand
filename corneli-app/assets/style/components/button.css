@@ -4,7 +4,7 @@ button {
 
 .cta-button {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 10px;
 
@@ -13,6 +13,7 @@ button {
     color: var(--color-text);
     outline: none;
     border: 1px solid rgba(196, 196, 196, 0.4);
+    border-radius: var(--radius-md);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     box-shadow:
         0 10px 25px rgba(18, 18, 18, 0.1),

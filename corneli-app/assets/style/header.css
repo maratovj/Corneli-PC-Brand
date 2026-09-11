@@ -5,6 +5,7 @@
 }
 
 .header__nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +13,18 @@
 }
 
 .header__logo-container {
+    display: flex;
     z-index: 1000;
+}
+
+.header__mobile-list {
+    display: none;
+}
+
+.header__mobile-action-button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
 }
 
 .header__logo {
@@ -47,4 +59,8 @@
 .header__action-button {
     background-color: transparent;
     border: none;
+}
+
+.visibility-hidden {
+    display: none;
 }
