@@ -19,7 +19,7 @@ export function makeCard(arr) {
 
         const price = document.createElement('span');
         price.classList.add('catalogue-section__card-price');
-        price.textContent = item.price;
+        price.textContent = '$' + item.price;
 
         card.append(img, title, type, price);
         cardContainer.append(card);

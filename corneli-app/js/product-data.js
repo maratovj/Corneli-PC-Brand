@@ -1,27 +1,4 @@
-export const OVERVIEW_DATA = [
-    {
-        id: "laptop",
-        title: "Laptops\nBuilt for More",
-        text: "Powerful. Reliable. Designed for creators, professionals and visionaries. Corneli laptops combine performance, precision and timeless design.",
-    },
-    {
-        id: "desktop",
-        title: "Desktops\nMade to Perform",
-        text: "Engineered for demanding work. Corneli desktops deliver uncompromising performance, refined design and the power to handle what comes next.",
-    },
-    {
-        id: "monitor",
-        title: "Monitors\nSee More Clearly",
-        text: "Precise. Immersive. Designed for modern workspaces. Corneli monitors bring clarity, detail and elegant design to every environment.",
-    },
-    {
-        id: "accessories",
-        title: "Accessories\nComplete Your Setup",
-        text: "Thoughtfully designed essentials for your workspace. Corneli accessories combine functionality, simplicity and timeless design.",
-    },
-];
-
-export const DESKTOPS = [
+export const PRODUCTS = [
     {
         id: 1,
         name: "CORNELI Forge X",
@@ -29,7 +6,7 @@ export const DESKTOPS = [
         type: "Workstation",
         price: 2499,
         colors: ["black", "gray"],
-        image: "./assets/images/desktops/forge-x.jpg",
+        image: "public/images/desktop.png",
     },
     {
         id: 2,
@@ -38,7 +15,7 @@ export const DESKTOPS = [
         type: "Performance Desktop",
         price: 1899,
         colors: ["black", "silver"],
-        image: "./assets/images/desktops/core-s.jpg",
+        image: "public/images/desktop.png",
     },
     {
         id: 3,
@@ -47,7 +24,7 @@ export const DESKTOPS = [
         type: "Creator Desktop",
         price: 2199,
         colors: ["black"],
-        image: "./assets/images/desktops/studio-pro.jpg",
+        image: "public/images/desktop.png",
     },
     {
         id: 4,
@@ -56,7 +33,7 @@ export const DESKTOPS = [
         type: "Compact Desktop",
         price: 1399,
         colors: ["black", "gray"],
-        image: "./assets/images/desktops/edge.jpg",
+        image: "public/images/desktop.png",
     },
     {
         id: 5,
@@ -65,13 +42,10 @@ export const DESKTOPS = [
         type: "Gaming Desktop",
         price: 2899,
         colors: ["black"],
-        image: "./assets/images/desktops/apex.jpg",
+        image: "public/images/desktop.png",
     },
-];
-
-export const LAPTOPS = [
-    {
-        id: 1,
+        {
+        id: 6,
         name: "CORNELI Atlas 14",
         category: "Laptops",
         type: "Ultrabook",
@@ -80,7 +54,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 2,
+        id: 7,
         name: "CORNELI Nova 16",
         category: "Laptops",
         type: "Performance Laptop",
@@ -98,7 +72,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 4,
+        id: 8,
         name: "CORNELI Aero 13",
         category: "Laptops",
         type: "Ultra Portable",
@@ -107,7 +81,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 5,
+        id: 9,
         name: "CORNELI Titan 17",
         category: "Laptops",
         type: "Workstation Laptop",
@@ -116,7 +90,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 6,
+        id: 10,
         name: "CORNELI Element 14",
         category: "Laptops",
         type: "Everyday Laptop",
@@ -125,7 +99,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 7,
+        id: 11,
         name: "CORNELI Flex 15",
         category: "Laptops",
         type: "Convertible Laptop",
@@ -134,7 +108,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 8,
+        id: 12,
         name: "CORNELI Pro 16",
         category: "Laptops",
         type: "Business Laptop",
@@ -143,7 +117,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 9,
+        id: 13,
         name: "CORNELI Summit 14",
         category: "Laptops",
         type: "2-in-1 Convertible",
@@ -152,7 +126,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 10,
+        id: 14,
         name: "CORNELI Essence 13",
         category: "Laptops",
         type: "Lightweight Laptop",
@@ -161,7 +135,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 11,
+        id: 15,
         name: "CORNELI Orion 16",
         category: "Laptops",
         type: "Gaming Laptop",
@@ -170,7 +144,7 @@ export const LAPTOPS = [
         image: "public/images/laptop.png",
     },
     {
-        id: 12,
+        id: 16,
         name: "CORNELI Pulse 14",
         category: "Laptops",
         type: "Student Laptop",
@@ -178,100 +152,94 @@ export const LAPTOPS = [
         colors: ["gray", "black"],
         image: "public/images/laptop.png",
     },
-];
-
-export const MONITORS = [
-    {
-        id: 1,
+        {
+        id: 17,
         name: "CORNELI Vision 32",
         category: "monitors",
         type: "Professional Monitor",
         price: 899,
         colors: ["black"],
-        image: "./assets/images/monitors/vision-32.jpg",
+        image: "public/images/content.jpg",
     },
     {
-        id: 2,
+        id: 18,
         name: "CORNELI Studio 27",
         category: "monitors",
         type: "Creator Monitor",
         price: 699,
         colors: ["black", "silver"],
-        image: "./assets/images/monitors/studio-27.jpg",
+        image: "public/images/content.jpg",
     },
     {
-        id: 3,
+        id: 19,
         name: "CORNELI Ultra 34",
         category: "monitors",
         type: "Ultrawide Monitor",
         price: 1099,
         colors: ["black"],
-        image: "./assets/images/monitors/ultra-34.jpg",
+        image: "public/images/content.jpg",
     },
     {
-        id: 4,
+        id: 20,
         name: "CORNELI Frame 24",
         category: "monitors",
         type: "Everyday Monitor",
         price: 399,
         colors: ["black", "white"],
-        image: "./assets/images/monitors/frame-24.jpg",
+        image: "public/images/content.jpg",
     },
     {
-        id: 5,
+        id: 21,
         name: "CORNELI Apex 32",
         category: "monitors",
         type: "Gaming Monitor",
         price: 999,
         colors: ["black"],
-        image: "./assets/images/monitors/apex-32.jpg",
+        image: "public/images/content.jpg",
     },
-];
-
-export const ACCESSORIES = [
-    {
-        id: 1,
+        {
+        id: 22,
         name: "CORNELI Type 01 Keyboard",
         category: "accessories",
         type: "Mechanical Keyboard",
         price: 149,
         colors: ["black", "white"],
-        image: "./assets/images/accessories/type-01.jpg",
+        image: "public/images/accessories.png",
     },
     {
-        id: 2,
+        id: 23,
         name: "CORNELI Arc Mouse",
         category: "accessories",
         type: "Wireless Mouse",
         price: 89,
         colors: ["black", "silver"],
-        image: "./assets/images/accessories/arc-mouse.jpg",
+        image: "public/images/accessories.png",
     },
     {
-        id: 3,
+        id: 24,
         name: "CORNELI Sound One",
         category: "accessories",
         type: "Wireless Headphones",
         price: 249,
         colors: ["black", "gray"],
-        image: "./assets/images/accessories/sound-one.jpg",
+        image: "public/images/accessories.png",
     },
     {
-        id: 4,
+        id: 25,
         name: "CORNELI Dock Pro",
         category: "accessories",
         type: "USB-C Dock",
         price: 179,
         colors: ["black", "silver"],
-        image: "./assets/images/accessories/dock-pro.jpg",
+        image: "public/images/accessories.png",
     },
     {
-        id: 5,
+        id: 26,
         name: "CORNELI Desk Hub",
         category: "accessories",
         type: "Desktop Hub",
         price: 129,
         colors: ["black"],
-        image: "./assets/images/accessories/desk-hub.jpg",
-    },
+        image: "public/images/accessories.png",
+    }
 ];
