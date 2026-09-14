@@ -47,7 +47,7 @@ export const PRODUCTS = [
         {
         id: 6,
         name: "CORNELI Atlas 14",
-        category: "Laptops",
+        category: "laptops",
         type: "Ultrabook",
         price: 1299,
         colors: ["black", "gray", "silver"],
@@ -56,7 +56,7 @@ export const PRODUCTS = [
     {
         id: 7,
         name: "CORNELI Nova 16",
-        category: "Laptops",
+        category: "laptops",
         type: "Performance Laptop",
         price: 1699,
         colors: ["silver", "black"],
@@ -65,7 +65,7 @@ export const PRODUCTS = [
     {
         id: 3,
         name: "CORNELI Vega 15",
-        category: "Laptops",
+        category: "laptops",
         type: "Creator Laptop",
         price: 1499,
         colors: ["black", "gray"],
@@ -74,7 +74,7 @@ export const PRODUCTS = [
     {
         id: 8,
         name: "CORNELI Aero 13",
-        category: "Laptops",
+        category: "laptops",
         type: "Ultra Portable",
         price: 1199,
         colors: ["champagne", "silver", "black"],
@@ -83,7 +83,7 @@ export const PRODUCTS = [
     {
         id: 9,
         name: "CORNELI Titan 17",
-        category: "Laptops",
+        category: "laptops",
         type: "Workstation Laptop",
         price: 2199,
         colors: ["black", "gray"],
@@ -92,7 +92,7 @@ export const PRODUCTS = [
     {
         id: 10,
         name: "CORNELI Element 14",
-        category: "Laptops",
+        category: "laptops",
         type: "Everyday Laptop",
         price: 1099,
         colors: ["silver", "black"],
@@ -101,7 +101,7 @@ export const PRODUCTS = [
     {
         id: 11,
         name: "CORNELI Flex 15",
-        category: "Laptops",
+        category: "laptops",
         type: "Convertible Laptop",
         price: 1399,
         colors: ["black", "silver"],
@@ -110,7 +110,7 @@ export const PRODUCTS = [
     {
         id: 12,
         name: "CORNELI Pro 16",
-        category: "Laptops",
+        category: "laptops",
         type: "Business Laptop",
         price: 1749,
         colors: ["silver", "black"],
@@ -119,7 +119,7 @@ export const PRODUCTS = [
     {
         id: 13,
         name: "CORNELI Summit 14",
-        category: "Laptops",
+        category: "laptops",
         type: "2-in-1 Convertible",
         price: 1449,
         colors: ["gray", "black"],
@@ -128,7 +128,7 @@ export const PRODUCTS = [
     {
         id: 14,
         name: "CORNELI Essence 13",
-        category: "Laptops",
+        category: "laptops",
         type: "Lightweight Laptop",
         price: 999,
         colors: ["silver", "gray"],
@@ -137,7 +137,7 @@ export const PRODUCTS = [
     {
         id: 15,
         name: "CORNELI Orion 16",
-        category: "Laptops",
+        category: "laptops",
         type: "Gaming Laptop",
         price: 1899,
         colors: ["black", "gray"],
@@ -146,7 +146,7 @@ export const PRODUCTS = [
     {
         id: 16,
         name: "CORNELI Pulse 14",
-        category: "Laptops",
+        category: "laptops",
         type: "Student Laptop",
         price: 899,
         colors: ["gray", "black"],

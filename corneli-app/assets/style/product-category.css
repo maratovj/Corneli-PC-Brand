@@ -19,7 +19,7 @@
 
 .product-category__container,
 .product-category__content {
-    padding-block: var(--container-pad);
+    padding-block-end: var(--container-pad);
 }
 
 .product-category__content {

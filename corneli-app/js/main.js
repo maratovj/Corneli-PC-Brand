@@ -1,18 +1,22 @@
 import { PRODUCTS } from './product-data.js'
-import { makeCard } from './card.js';
+import { renderCards } from './card.js';
 
 const list = document.querySelector('.catalogue-section__list');
 
-function filter(event, arr) {
+function filter(event, products) {
     const buttonId = event.target.dataset.id;
+    const filteredItems = products.filter(product => {
 
-    const filteredItems = arr.filter(item => buttonId === item.category);
+        if (!product) return;
+
+        return product.category === buttonId;
+
+    });
 
     return filteredItems;
-} 
+}
 
 list.addEventListener('click', event => {
-    filter(event, PRODUCTS);
+    const result = filter(event, PRODUCTS);
+    renderCards(result);
 });
-
-makeCard(PRODUCTS)

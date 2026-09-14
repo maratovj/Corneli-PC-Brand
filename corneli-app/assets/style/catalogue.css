@@ -27,6 +27,21 @@
     border-bottom: var(--border);
 }
 
+.catalogue-section__filter-btn {
+    transition: 0.2s ease-out;
+}
+
+.catalogue-section__filter-btn:hover {
+    background: radial-gradient(circle at bottom,
+            #F69D39 10%, #EF6905 60%);
+    color: var(--color-light);
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.1),
+        inset 0 8px 12px rgba(255, 255, 255, 0.7),
+        inset 0 0 5px rgba(117, 117, 117, 0.3),
+        inset 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
 .catalogue-section__list {
     display: flex;
     flex-wrap: wrap;
