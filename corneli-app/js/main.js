@@ -14,12 +14,17 @@ function filter(event, products) {
     const buttonId = event.target.dataset.id;
     const filteredItems = products.filter(product => {
 
+        if (buttonId === 'all') {
+            return true;
+        }
         return product.category === buttonId;
 
     });
 
     return filteredItems;
 }
+
+renderCards(PRODUCTS);
 
 list.addEventListener('click', event => {
     const result = filter(event, PRODUCTS);
