@@ -2,7 +2,8 @@ const cardContainer = document.querySelector('.catalogue-section__product-grid')
 
 export function renderCards(products) {
     cardContainer.replaceChildren();
-    products.forEach(product => {
+
+    products.forEach(product => {   
         const card = document.createElement('div');
         card.classList.add('catalogue-section__card');
 
