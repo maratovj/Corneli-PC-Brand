@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.history-section {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding-block: 40px;
+    margin-block: 40px;
+}
+
+.history-section__content {
+    padding: 20px 40px;
+}
+
+.mission-section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 40px 0;
+}
+
+.mission-section__subtitle {
+    max-width: 600px;
+    margin-inline-end: auto;
+}

@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="assets/style/main.css">
 </head>
 
 <body>
+
     <!-- HEADER -->
 
     <header class="header">
@@ -60,111 +61,123 @@
     <!-- MAIN -->
 
     <main class="main">
-        <section class="catalogue-section">
-            <div class="catalogue-section__container section--container">
-                <div class="catalogue-section__hero">
-                    <div class="catalogue-section__path"></div>
-                    <div class="catalogue-section__content">
-                        <h1 class="catalogue-section__title section--title">
-                            Built for More
-                        </h1>
-                        <p class="catalogue-section__subtitle">
-                            Explore Corneli technology designed for creators, professionals and modern workspaces.
-                            Performance without unnecessary complexity.
-                        </p>
-                    </div>
+        <section class="about-section">
+            <div class="about-section__container section--container grid">
+                <div class="about-section__hero-block">
+                    <span class="hero-block-badge">
+                        Designed to Inspire.
+                        Built for Comfort.
+                    </span>
+                    <h1 class="about-section__title section--title">
+                        Shaping the Future <br> of Minimal Hardware.
+                    </h1>
+                    <p class="about-section__subtitle">
+                        Corneli hardware blends refined aesthetics with advanced technology to create the ultimate work
+                        environment for modern professionals.
+                    </p>
                 </div>
-
-                <button class="to-top" aria-label="Back to top" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 1024 1024">
-                        <title>top</title>
-                        <path fill="currentColor"
-                            d="M572.2 205.3v600.3a30.1 30.1 0 1 1-60.2 0V205.3L292.4 438.6a29 29 0 0 1-42.7 0a33.4 33.4 0 0 1 0-45.2l271-288a29 29 0 0 1 42.7 0l271.1 288a33.4 33.4 0 0 1 0 45.2a29 29 0 0 1-42.6 0z" />
-                    </svg>
-                </button>
-
-
-                <div class="catalogue-section__body">
-                    <div class="catalogue-section__filter-container">
-
-                        <div class="catalogue-section__filter-main">
-                            <ul class="catalogue-section__list">
-                                <li class="catalogue-section__item">
-                                    <button class="catalogue-section__filter-btn cta-button" data-id="all">All</button>
-                                </li>
-                                <li class="catalogue-section__item">
-                                    <button class="catalogue-section__filter-btn cta-button"
-                                        data-id="desktops">Desktops</button>
-                                </li>
-                                <li class="catalogue-section__item">
-                                    <button class="catalogue-section__filter-btn cta-button"
-                                        data-id="laptops">Laptops</button>
-                                </li>
-                                <li class="catalogue-section__item">
-                                    <button class="catalogue-section__filter-btn cta-button"
-                                        data-id="monitors">Monitors</button>
-                                </li>
-                                <li class="catalogue-section__item">
-                                    <button class="catalogue-section__filter-btn cta-button"
-                                        data-id="accessories">Accessories</button>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="catalogue-section__filter-stack">
-                            <button class="catalogue-section__filter-btn cta-button btn--filter">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                                    <title>filter</title>
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-miterlimit="10" stroke-width="1.5"
-                                        d="M21.25 12H8.895m-4.361 0H2.75m18.5 6.607h-5.748m-4.361 0H2.75m18.5-13.214h-3.105m-4.361 0H2.75m13.214 2.18a2.18 2.18 0 1 0 0-4.36a2.18 2.18 0 0 0 0 4.36Zm-9.25 6.607a2.18 2.18 0 1 0 0-4.36a2.18 2.18 0 0 0 0 4.36Zm6.607 6.608a2.18 2.18 0 1 0 0-4.361a2.18 2.18 0 0 0 0 4.36Z" />
-                                </svg>
-                                <span>Filter</span>
-                            </button>
-
-                            <div class="filter-block">
-                                <div class="filter-block-body">
-                                    <ul class="filter-block__list">
-                                        <li class="filter-block__item">
-                                            Featured
-                                        </li>
-                                        <li class="filter-block__item">
-                                            Most relevant
-                                        </li>
-                                        <li class="filter-block__item">
-                                            Best selling
-                                        </li>
-                                        <li class="filter-block__item alphabetically--filter">
-                                            <button>
-                                                Alphabetically, A-Z
-                                            </button>
-                                        </li>
-                                        <li class="filter-block__item alphabetically--filter-reverse">
-                                            <button>
-                                                Alphabetically, Z-A
-                                            </button>
-                                        </li>
-                                        <li class="filter-block__item">
-                                            Price, low to high
-                                        </li>
-                                        <li class="filter-block__item">
-                                            Price, high to low
-                                        </li>
-                                        <li class="filter-block__item">
-                                            Date, old to new
-                                        </li>
-                                        <li class="filter-block__item">
-                                            Date, new to old
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="catalogue-section__product-grid"></div>
+                <div class="about-section__hero-block-image">
+                    <img src="./public/images/about/hero-block.jpg"
+                        alt="Corneli devices on the stone for the illustration">
                 </div>
             </div>
+        </section>
+
+        <section class="history-section">
+            <div class="history-section__container section--container grid">
+                <div class="history-section__image-container">
+                    <img src="public/images/about/our-history.jpg" alt="Picture of how our Story brand appear">
+                </div>
+                <div class="history-section__content">
+                    <span class="history-section__badge section--badge">
+                        Our Story
+                    </span>
+                    <h1 class="history-section__title section--title">
+                        History of <br> the Brand
+                    </h1>
+                    <p class="history-section__subtitle section--subtitle">
+                        Corneli launched in a small engineering workshop, driven simultaneously by a desire to challenge
+                        the conventions of sterile hardware and to craft devices that are as beautiful as they are
+                        powerful. Our founders sought to redefine the professional tech landscape, leaving behind
+                        clutter and compromise.
+                        <br>
+                        Today, Corneli is a global movement, offering innovative, modular ecosystems for creation,
+                        expansion, and ergonomic performance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-section">
+            <div class="mission-section__container section--container grid">
+                <div class="mission-section__content">
+                    <span>OUR PROMISE</span>
+                    <h1 class="mission-section__title">
+                        Our Promise & Core Values
+                    </h1>
+                    <p class="mission-section__subtitle section--subtitle">
+                        We believe that tools should elevate, not obstruct. Every detail is considered, from silent
+                        thermal cooling to textured, anodized finishes. The Bridge is not just about connecting
+                        devices,
+                        but also connecting your vision to reality.
+                    </p>
+                </div>
+                <div class="mission-section__image-container">
+                    <img src="public/images/about/our-misson.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="value-section">
+            <div class="value-section__container section--container">
+                <div class="value-section__image-container">
+                    <img src="public/images/about/corneli-value.jpg" alt="">
+                </div>
+                <div class="value-section__content">
+                    <span class="value-section__badge">
+                        OUR VALUES
+                    </span>
+                    <h1 class="value-section__title section--title-small">
+                        More Than Style. <br> A Way of Life.
+                    </h1>
+                    <div class="value-section__content-body">
+                        <div class="value-section__content-column">
+                            <h2 class="column-title">01 / QUALITY</h2>
+                            <p class="column-subtitle">
+                                We used only the finest materials
+                                and craftmanship to ensure lasting performance
+                                and timeless style.
+                            </p>
+                        </div>
+                        <div class="value-section__content-column">
+                            <h2 class="column-title">02 / INNOVATSION</h2>
+                            <p class="column-subtitle">
+                                We continously explore
+                                new technologies and ideas
+                                to create betterm smarter solutions
+                                for modern life
+                            </p>
+                        </div>
+                        <div class="value-section__content-column">
+                            <h2 class="column-title">03 / SUSTAINABILITY</h2>
+                            <p class="column-subtitle">
+                                We care about the planet and
+                                take responsibility for our impact --
+                                from materials to manufacturing.
+                            </p>
+                        </div>
+                        <div class="value-section__content-column">
+                            <h2 class="column-title">04 / COMMUNITY</h2>
+                            <p class="column-subtitle">
+                                We believe in people, in sport,
+                                in movement. We build a community
+                                of like-minded individuals who share our
+                                values.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </section>
     </main>
 
@@ -526,7 +539,7 @@
                         </ul>
                     </div>
                 </div>
-       
+
             </div>
 
             <div class="footer__soc1als-container">
@@ -611,8 +624,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>
