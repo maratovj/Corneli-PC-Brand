@@ -50,7 +50,7 @@
                 <button class="header__action-button" aria-label="Languages" type="button">EN</button>
             </div>
 
-            <button class="header__burger-menu">
+            <button class="header__burger-menu" type="button" title="Menu" aria-label="Menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </section>
     </main>
 
@@ -544,17 +544,22 @@
 
             <div class="footer__soc1als-container">
                 <div class="footer__newsletter">
-                    <span>Get the last updates</span>
                     <form>
-                        <input type="text" placeholder="Enter email address">
-                        <button class="cta-button">
-                            Sign up
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
-                                <title>arrow-up</title>
-                                <path fill="currentColor"
-                                    d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
-                            </svg>
-                        </button>
+                        <div class="mail-block">
+                            <label for="text">Get the last updates</label>
+                            <input type="text" placeholder="Enter email address">
+                        </div>
+                        <div class="send-block">
+                            <button class="cta-button">
+                                Sign up
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                                    viewBox="0 0 24 24">
+                                    <title>arrow-up</title>
+                                    <path fill="currentColor"
+                                        d="M11 20V7.75L5.75 13L5 12.34l6.5-6.5l6.5 6.5l-.75.66L12 7.75V20z" />
+                                </svg>
+                            </button>
+                        </div>
                     </form>
                 </div>
 

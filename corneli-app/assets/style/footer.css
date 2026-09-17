@@ -68,6 +68,19 @@
     gap: clamp(10px, calc(9.992px + 0.834vw), 20px);
 }
 
+.mail-block, .send-block {
+    display: flex;
+}
+
+.mail-block {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.send-block {
+    align-items: end;
+}
+
 .footer__newsletter form button {
     color: var(--color-dark);
 }
