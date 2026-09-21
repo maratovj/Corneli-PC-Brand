@@ -77,7 +77,7 @@ export const PRODUCTS = [
         category: "laptops",
         type: "Ultra Portable",
         price: 1199,
-        colors: ["champagne", "silver", "black"],
+        colors: ["#F7E6CA", "silver", "black"],
         image: "public/images/laptop.png",
     },
     {

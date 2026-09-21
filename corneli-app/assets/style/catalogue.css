@@ -58,15 +58,6 @@
     gap: 10px;
 }
 
-.catalogue-section__product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    column-gap: 10px;
-    row-gap: 20px;
-
-    padding-block: 10px;
-}
-
 .filter-body {
     position: relative;
 }
@@ -74,13 +65,26 @@
 .filter-block-body {
     display: none;
 
-    width: 200px;
+    width: 300px;
     position: absolute;
 
     margin-top: 10px;
-    padding: 10px 20px;
     background-color: var(--color-background-dark);
     border-radius: var(--radius-md);
+    z-index: 1;
+}
+
+.filter-block__item button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.filter-block__item button:hover {
+    background-color: var(--color-background);
+    border: none;
 }
 
 .filter--active {
@@ -89,4 +93,52 @@
 
 .btn--filter svg {
     transform: rotate(0deg);
+}
+
+.catalogue-section__product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 10px;
+    row-gap: 20px;
+
+    padding-block: 10px;
+}
+
+.catalogue-section__card {
+    position: relative;
+}
+
+.card-info-block {
+    padding: 20px 10px;
+}
+
+.card-featured {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.card-color-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.card-color {
+    position: relative;
+    border: none;
+    border-radius: var(--radius-full);
+    padding: 10px;
+}
+
+.card-color::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
