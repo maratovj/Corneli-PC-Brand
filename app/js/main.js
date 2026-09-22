@@ -1,6 +1,6 @@
 //IMPORTS
 
-import { PRODUCTS } from './product-data.js'
+import { PRODUCTS } from './product-data.js';
 import { renderCards } from './card.js';
 import { toggleClass, backToTop } from './burger-menu.js'
 import { sortByAlphabet, sortByAlphabetReverse, lowToHigh, highToLow } from './filter.js';

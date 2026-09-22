@@ -6,7 +6,7 @@ export const PRODUCTS = [
         type: "Workstation",
         price: 2499,
         colors: ["black", "gray"],
-        image: "corneli-app/public/images/desktop.png",
+        image: "app/public/images/desktop.png",
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const PRODUCTS = [
         type: "Performance Desktop",
         price: 1899,
         colors: ["black", "silver"],
-        image: "public/images/desktop.png",
+        image: "app/public/images/desktop.png",
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const PRODUCTS = [
         type: "Creator Desktop",
         price: 2199,
         colors: ["black"],
-        image: "public/images/desktop.png",
+        image: "app/public/images/desktop.png",
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const PRODUCTS = [
         type: "Compact Desktop",
         price: 1399,
         colors: ["black", "gray"],
-        image: "public/images/desktop.png",
+        image: "app/public/images/desktop.png",
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ export const PRODUCTS = [
         type: "Gaming Desktop",
         price: 2899,
         colors: ["black"],
-        image: "public/images/desktop.png",
+        image: "app/public/images/desktop.png",
     },
         {
         id: 6,
@@ -51,7 +51,7 @@ export const PRODUCTS = [
         type: "Ultrabook",
         price: 1299,
         colors: ["black", "gray", "silver"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ export const PRODUCTS = [
         type: "Performance Laptop",
         price: 1699,
         colors: ["silver", "black"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 3,
@@ -69,7 +69,7 @@ export const PRODUCTS = [
         type: "Creator Laptop",
         price: 1499,
         colors: ["black", "gray"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ export const PRODUCTS = [
         type: "Ultra Portable",
         price: 1199,
         colors: ["#F7E6CA", "silver", "black"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ export const PRODUCTS = [
         type: "Workstation Laptop",
         price: 2199,
         colors: ["black", "gray"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 10,
@@ -96,7 +96,7 @@ export const PRODUCTS = [
         type: "Everyday Laptop",
         price: 1099,
         colors: ["silver", "black"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 11,
@@ -105,7 +105,7 @@ export const PRODUCTS = [
         type: "Convertible Laptop",
         price: 1399,
         colors: ["black", "silver"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 12,
@@ -114,7 +114,7 @@ export const PRODUCTS = [
         type: "Business Laptop",
         price: 1749,
         colors: ["silver", "black"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 13,
@@ -123,7 +123,7 @@ export const PRODUCTS = [
         type: "2-in-1 Convertible",
         price: 1449,
         colors: ["gray", "black"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 14,
@@ -132,7 +132,7 @@ export const PRODUCTS = [
         type: "Lightweight Laptop",
         price: 999,
         colors: ["silver", "gray"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 15,
@@ -141,7 +141,7 @@ export const PRODUCTS = [
         type: "Gaming Laptop",
         price: 1899,
         colors: ["black", "gray"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
     {
         id: 16,
@@ -150,7 +150,7 @@ export const PRODUCTS = [
         type: "Student Laptop",
         price: 899,
         colors: ["gray", "black"],
-        image: "public/images/laptop.png",
+        image: "app/public/images/laptop.png",
     },
         {
         id: 17,
@@ -159,7 +159,7 @@ export const PRODUCTS = [
         type: "Professional Monitor",
         price: 899,
         colors: ["black"],
-        image: "public/images/content.jpg",
+        image: "app/public/images/content.jpg",
     },
     {
         id: 18,
@@ -168,7 +168,7 @@ export const PRODUCTS = [
         type: "Creator Monitor",
         price: 699,
         colors: ["black", "silver"],
-        image: "public/images/content.jpg",
+        image: "app/public/images/content.jpg",
     },
     {
         id: 19,
@@ -177,7 +177,7 @@ export const PRODUCTS = [
         type: "Ultrawide Monitor",
         price: 1099,
         colors: ["black"],
-        image: "public/images/content.jpg",
+        image: "app/public/images/content.jpg",
     },
     {
         id: 20,
@@ -186,7 +186,7 @@ export const PRODUCTS = [
         type: "Everyday Monitor",
         price: 399,
         colors: ["black", "white"],
-        image: "public/images/content.jpg",
+        image: "app/public/images/content.jpg",
     },
     {
         id: 21,
@@ -195,7 +195,7 @@ export const PRODUCTS = [
         type: "Gaming Monitor",
         price: 999,
         colors: ["black"],
-        image: "public/images/content.jpg",
+        image: "app/public/images/content.jpg",
     },
         {
         id: 22,
@@ -204,7 +204,7 @@ export const PRODUCTS = [
         type: "Mechanical Keyboard",
         price: 149,
         colors: ["black", "white"],
-        image: "public/images/accessories.png",
+        image: "app/public/images/accessories.png",
     },
     {
         id: 23,
@@ -213,7 +213,7 @@ export const PRODUCTS = [
         type: "Wireless Mouse",
         price: 89,
         colors: ["black", "silver"],
-        image: "public/images/accessories.png",
+        image: "app/public/images/accessories.png",
     },
     {
         id: 24,
@@ -222,7 +222,7 @@ export const PRODUCTS = [
         type: "Wireless Headphones",
         price: 249,
         colors: ["black", "gray"],
-        image: "public/images/accessories.png",
+        image: "app/public/images/accessories.png",
     },
     {
         id: 25,
@@ -231,7 +231,7 @@ export const PRODUCTS = [
         type: "USB-C Dock",
         price: 179,
         colors: ["black", "silver"],
-        image: "public/images/accessories.png",
+        image: "app/public/images/accessories.png",
     },
     {
         id: 26,
@@ -240,6 +240,6 @@ export const PRODUCTS = [
         type: "Desktop Hub",
         price: 129,
         colors: ["black"],
-        image: "public/images/accessories.png",
+        image: "app/public/images/accessories.png",
     }
 ];
