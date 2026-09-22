@@ -1,11 +1,7 @@
-const menu = document.querySelector('.header__link-container');
-const overlay = document.querySelector('.overlay')
-const burgerMenu = document.querySelector('.header__burger-menu');
-
-export function toggleClass() {
-    burgerMenu.classList.toggle('burger-menu--active');
-    overlay.classList.toggle('overlay--active');
-    menu.classList.toggle('is-active')
+export function toggleClass(arg1, arg2, arg3) {
+    arg1.classList.toggle('burger-menu--active');
+    arg2.classList.toggle('overlay--active');
+    arg3.classList.toggle('is-active')
     document.body.classList.toggle('menu-open');
 }
 
