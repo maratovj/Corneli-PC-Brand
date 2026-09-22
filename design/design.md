@@ -7,3 +7,5 @@ https://dribbble.com/shots/27296966-Nebula-Exchange-Crypto-Trading-Platform-Logi
 https://colorhunt.co/palettes/dark
 
 https://dribbble.com/nemis
+
+https://dribbble.com/samoctav

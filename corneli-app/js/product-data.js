@@ -6,7 +6,7 @@ export const PRODUCTS = [
         type: "Workstation",
         price: 2499,
         colors: ["black", "gray"],
-        image: "public/images/desktop.png",
+        image: "corneli-app/public/images/desktop.png",
     },
     {
         id: 2,
