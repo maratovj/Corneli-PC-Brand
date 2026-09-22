@@ -4,8 +4,12 @@ export function renderCards(products) {
     cardContainer.replaceChildren();
 
     products.forEach(product => {
-        const card = document.createElement('div');
+        const card = document.createElement('a');
         card.classList.add('catalogue-section__card');
+        card.href = '';
+
+        const container = document.createElement('div');
+        container.classList.add('catalogue-section__card-container');
 
         const img = document.createElement('img');
         img.classList.add('catalogue-section__card-image')
@@ -48,7 +52,8 @@ export function renderCards(products) {
         })
 
         infoBlock.append(title, type, price, colors);
-        card.append(img, featured, infoBlock);
+        container.append(img, featured, infoBlock);
+        card.append(container);
         cardContainer.append(card);
     })
 

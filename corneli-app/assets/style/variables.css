@@ -3,7 +3,7 @@
 
 :root {
   /* Colors */
-  --color-background: #F2EFE5;
+  --color-background: #f0eee8;
   --color-background-dark: #FAF9EE;
   --color-light: #FFFFFF;
   --color-dark: #000000;
@@ -16,7 +16,7 @@
   --ff-secondary: 'Poiret One', sans-serif;
   --ff-accent: 'Monoton', cursive;
 
-  --text-size: clamp(2.75rem, 6vw, 4.5rem);
+  --text-size: clamp(36px, calc(27.692px + 2.308vw), 72px);
   --text-weight: 600;
 
   --text-size-lg: 2.25rem;
@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: var(--ff-base);
+  font-size: clamp(16px, calc(15.538px + 0.128vw), 18px);
 }
 
 img {
