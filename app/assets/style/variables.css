@@ -3,13 +3,13 @@
 
 :root {
   /* Colors */
-  --color-background: #f0eee8;
-  --color-background-dark: #FAF9EE;
+  --color-background: #d5d5d5;
+  --color-background-dark: #b0b0b0;
   --color-light: #FFFFFF;
   --color-dark: #000000;
   --color-darkgray: #3f3f3f;
   --color-muted: #888;
-  --color-accent: #FF6500;
+  --color-accent: #FF7043;
 
   /* Typography */
   --ff-base: 'Afacad', sans-serif;

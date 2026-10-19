@@ -1,5 +1,15 @@
-document.querySelectorAll('[data-include]').forEach(async el => {
-    const file = el.getAttribute('data-include');
-    const html = await fetch(file).then(r => r.text());
-    el.outerHTML = html;
-});
+async function includeComponents() {
+    const includes = document.querySelectorAll('[data-include]');
+
+    await Promise.all([...includes].map(async element => {
+        const file = element.getAttribute('data-include');
+        const response = await fetch(file);
+        const html = await response.text();
+
+        element.outerHTML = html;
+    }));
+
+    document.dispatchEvent(new Event('componentsLoaded'));
+}
+
+includeComponents();
