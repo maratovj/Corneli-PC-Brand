@@ -63,7 +63,7 @@ export const PRODUCTS = [
         image: "app/public/images/laptop.png",
     },
     {
-        id: 3,
+        id: 27,
         name: "CORNELI Vega 15",
         category: "laptops",
         type: "Creator Laptop",

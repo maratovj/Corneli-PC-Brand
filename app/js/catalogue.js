@@ -1,6 +1,11 @@
 import { PRODUCTS } from './product-data.js';
 import { renderCards } from './card.js';
-import { sortByAlphabet, sortByAlphabetReverse, lowToHigh, highToLow } from './filter.js';
+import {
+    sortByAlphabet,
+    sortByAlphabetReverse,
+    lowToHigh,
+    highToLow
+} from './filter.js';
 
 const list = document.querySelector('.catalogue-section__list');
 const filterBtn = document.querySelector('.btn--filter');

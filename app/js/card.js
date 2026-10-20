@@ -6,7 +6,8 @@ export function renderCards(products) {
     products.forEach(product => {
         const card = document.createElement('a');
         card.classList.add('catalogue-section__card');
-        card.href = '';
+        card.href = `product-page.html?id=${encodeURIComponent(product.id)}`;
+        card.setAttribute('aria-label', `View ${product.name}`);
 
         const container = document.createElement('div');
         container.classList.add('catalogue-section__card-container');
