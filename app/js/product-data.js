@@ -25,6 +25,11 @@ export const PRODUCTS = [
         price: 2199,
         colors: ["black"],
         image: "app/public/images/desktop.png",
+        gallery: [
+            "app/public/images/desktop.png", 
+            "app/public/images/laptop.png",
+            "app/public/images/accessories.png",
+        ],
     },
     {
         id: 4,
