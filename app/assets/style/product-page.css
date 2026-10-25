@@ -31,8 +31,17 @@
     list-style: none;
 }
 
+.product-hero__breadcrumb-item:not(:first-child)::before {
+    content: '/';
+    margin-inline: 0.5rem;
+}
+
 .product-hero__breadcrumb-link {
     transition: color var(--motion-base) var(--easing-standard);
+}
+
+.product-hero__breadcrumb-link {
+    color: var(--color-darkgray);
 }
 
 .product-hero__breadcrumb-link:hover {
