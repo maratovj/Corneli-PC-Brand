@@ -1,0 +1,44 @@
+.window-wrapper {
+    position: fixed;
+    inset: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 100;
+    display: none;
+}
+
+.bag-modal__container {
+    max-width: 50vw;
+    width: 30vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -30vw;
+    z-index: 101;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.bag-modal__hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bag-modal__container--appear {
+    position: absolute;
+    right: 0;
+}
+
+.window-wrapper--appear {
+    display: block;
+}
+
+.close-bag-modal {
+    padding: 10px 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.close-bag-modal:hover {
+    background-color: lightgray;
+    transition: background 0.3s ease;
+}

@@ -35,12 +35,12 @@ function renderBreadcrumbs(product) {
     const categoryName = product ? capitalize(product.category) : '';
     const breadcrumds = createElement('nav', `${BLOCK}__breadcrumbs`);
     const links = createElement('ol', `${BLOCK}__breadcrumb-list`);
-    
+
     const items = [
         { label: 'Home', href: URLS.home },
         { label: 'Product', href: URLS.catalogue },
         { label: categoryName, href: URLS.catalogue },
-        { label: product.name}
+        { label: product.name }
     ];
 
     items.forEach(item => {
@@ -65,20 +65,32 @@ function renderInfo(product) {
     const heading = createElement('div', `${BLOCK}__heading`);
     const type = createElement('span', `${BLOCK}__type`, product.type);
     const title = createElement('h1', `${BLOCK}__title`, product.name);
-    const price = createElement('p', `${BLOCK}__price`, product.price);
-    const desc = createElement('p', `${BLOCK}__description`, product.id);
-    const button = createElement('button', `${BLOCK}__cart-btn`, 'Add to cart');
+    const price = createElement(
+        'p', `${BLOCK}__price`,
+        new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            maximumFractionDigits: 0
+        }).format(product.price));
+    const desc = createElement('p', `${BLOCK}__description`, '');
+    const action = createElement('button', `${BLOCK}__button`, 'Add to cart');
 
-    heading.append(type, title, price, desc, button);
+    heading.append(type, title, price);
+    infoContainer.replaceChildren(
+        renderBreadcrumbs(product),
+        heading,
+        renderColors(product.colors),
+        desc,
+        action
+    );
 
-    return heading;
 }
 
 function renderColors(colors) {
     const section = createElement('fieldset', `${BLOCK}__color-section`);
     const legend = createElement('legend', `${BLOCK}__color-title`, 'Colors:');
     const swatches = createElement('div', `${BLOCK}__swatches`);
-    
+
     colors.forEach(color => {
         const swatch = createElement('button', `${BLOCK}__swatch`);
         swatch.type = 'button';
@@ -87,12 +99,33 @@ function renderColors(colors) {
         swatches.append(swatch);
     })
     section.append(legend, swatches);
-    
+
     return section;
 }
 
-infoContainer.replaceChildren(
-    renderBreadcrumbs(product),
-    renderInfo(product),
-    renderColors(product.colors)
-)
+function renderGallery(product) {
+    const imageFrame = createElement('div', `${BLOCK}__image-frame`);
+    const image = createElement('img', `${BLOCK}__image`);
+    const imageCount = createElement('span', `${BLOCK}__image-count`);
+    const thumbnails = createElement('div', `${BLOCK}__thumbnails`);
+
+    image.src = product.gallery[0];
+    imageCount.textContent = formatCounter(product.gallery.length[0], product.gallery.length);
+
+    product.gallery.forEach(img => {
+        const thumbnail = createElement('div', `${BLOCK}__thumbnail`);
+        const image = createElement('img', `${BLOCK}__thumbnail-image`);
+        image.src = product.gallery[1]
+        thumbnail.append(image);
+        thumbnails.append(thumbnail);
+    })
+
+
+    imageFrame.append(image, imageCount, thumbnails);
+    galleryContainer.replaceChildren(imageFrame)
+}
+
+if (infoContainer && galleryContainer) {
+    renderInfo(product);
+    renderGallery(product);
+}
